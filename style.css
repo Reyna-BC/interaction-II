@@ -1,12 +1,89 @@
 html, body {
   margin: 0;
   padding: 0;
-  text-align: center;
-  background-color: rgb(90, 116, 126);
-  color: rgb(255, 255, 255);
+  background-color: #ffb300;
 }
 
 canvas {
-  margin: auto;
   display: block;
+   margin: 0 auto;
+  
+}
+
+nav {
+  background-color: #9c7300;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 2px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.imagebackground {
+    padding: 50px;
+    background-color: #111421;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.homepage {
+    width: 100px;
+    height: 100px;
+    display: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: 1;
+}
+
+
+.options {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    gap: 500px;
+    top: 80%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+}
+
+.option {
+    text-decoration: center;
+    text-align: center;
+    padding: 50px;
+    color: #ddd;
+    background: rgba(45, 42, 35, 0.9);
+    border: 2px solid #74684f;
+    font-size: 20px;
+    font-family: Georgia, serif;
+    transition: 0.3s;
+}
+
+.option:hover {
+    background: #74684f;
+    color: rgb(255, 255, 255);
+    transform: scale(1.08);
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px;
 }
